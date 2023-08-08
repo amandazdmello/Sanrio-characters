@@ -1,0 +1,164 @@
+body {
+    font-family: 'Sarabun', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #aedde9;
+    color: #383636;
+}
+
+body.modo-escuro {
+    background-color: #5a5757;
+    color: #f7f8f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+header .logo {
+    width: 100px;
+    transition: 0.2s ease-in-out;
+}
+
+header .imagem-botao {
+    width: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .imagem-botao:hover,
+header .logo:hover,
+main .cartao-personagem:hover {
+    transform: scale(1.10);
+}
+
+main {
+    padding: 25px;
+}
+
+main .lista-personagens-sanrio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-personagem {
+    background-color: #ffffe0;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out;
+
+}
+
+main .cartao-personagem:hover {
+    background-color: #eeafde;
+}
+
+.modo-escuro .cartao-personagem {
+    background-color: #a8a8a8;
+}
+
+main .cartao-personagem .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e68bae;
+    border-radius: 50px;
+    background-color: #e68bae;
+}
+
+main .cartao-personagem .informacoes span {
+    padding: 5px;
+    text-transform: none;
+    font-size: 18px;
+    color: #ffffe0;
+}
+
+main .cartao-personagem .gif {
+    width: 120px;
+    height: 120px;
+}
+
+main .cartao-personagem .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-personagem .tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+footer .rodape {
+    width: 1400px;
+    margin-bottom: -4px;
+}
+
+footer {
+    position: relative;
+}
+
+footer .pintura {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 25px; 
+    background-color: #ee81a9; 
+
+}
+
+footer .github{
+    width: 50px;
+    position: relative;
+    top: 0px;
+    left: 600px;
+    
+}
+
+footer .linkedin{
+    width: 50px;
+    position: relative;
+    top: 0px;
+    left: 700px;
+   
+}
+
+footer p {
+    text-align:center;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 10px;
+    background-color: #ee81a9;
+}
+
+footer .logos{
+    background-color: #ee81a9
+    
+}
+
+footer .linkedin:hover,
+footer .github:hover{
+    transform: scale(1.10);
+    transition: 0.2s ease-in-out;
+}
+
